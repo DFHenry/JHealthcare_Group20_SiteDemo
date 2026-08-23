@@ -1,0 +1,65 @@
+/* VARIABLES */
+
+:root
+{
+    --mainBlue: #040c89;
+    --midBlue: #7b83c4;
+    --lightBlue: #e5e7f3;
+}
+
+body
+{
+    margin: 0;
+}
+
+nav
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+}
+
+.navLogo
+{
+    height: 100px;
+}
+
+#brandSpace
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#brandTitle
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.brandTitleLine
+{
+    margin-left: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* .brandTitleLine:last-child
+{
+    margin-bottom: 0;
+    margin-top: 0;
+} */
+
+footer
+{
+    background-color: #040c89;
+}
+
+footer p
+{
+    color: #fff;
+}
