@@ -14,6 +14,16 @@
     font-family: Helvetica, Arial, sans-serif;
 }
 
+.bodyCopy
+{
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.asideCopy
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 /* BASIC RULES */
 
 body
@@ -48,6 +58,37 @@ li
 
 /* LAYOUTS */
 
+.bgImage
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.bgImage img
+{
+    width: 100%;
+}
+
+.cardGrid
+{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infoCard
+{
+    display: flex;
+    background-color: #00000080;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    margin: 20px;
+    width: 25%;
+}
+
 /* NAVIGATION BAR */
 
 nav
@@ -59,6 +100,7 @@ nav
     position: sticky;
     top: 0;
     background-color: #fff;
+    z-index: 1;
 }
 
 .navLogo
@@ -118,9 +160,26 @@ footer a
     margin: 25px 15%;
 }
 
+.footSocials
+{
+    display: flex;
+    flex-direction: column;
+}
+
 #footLogo
 {
     width: 150px;
+}
+
+.socialIcon
+{
+    width: 30px;
+    margin: 20px;
+}
+
+.socialIcon:first-child
+{
+    margin-left: 0;
 }
 
 #footMap
@@ -139,4 +198,21 @@ footer a
     display: flex;
     flex-direction: column;
     align-items: end;
+}
+
+#footCors p
+{
+    margin-top: 0;
+}
+
+#legalInfo
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 25px 15%;
+}
+
+#legalInfo p
+{
+    font-size: 1em;
 }
