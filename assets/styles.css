@@ -1,3 +1,10 @@
+/* EXTERNAL FONT FILES */
+
+@font-face {
+    font-family: Lato-Heavy;
+    src: url(./fonts/Lato-Heavy.ttf);
+}
+
 /* VARIABLES */
 
 :root
@@ -54,7 +61,7 @@ h3
 
 h4
 {
-    font-size: 1.25em;
+    font-size: 1.75em;
     color: #fff;
 }
 
@@ -103,7 +110,8 @@ li
 {
     backdrop-filter: blur(10px);
     background-color: #00000080;
-    width: 100%;
+    width: 70%;
+    margin-top: 120px;
     margin-bottom: 20px;
     border-radius: 24px;
 }
@@ -113,7 +121,7 @@ li
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 70%;
 
 }
 
@@ -127,6 +135,7 @@ li
     border: var(--lightBlue) solid 1px;
     margin: 20px;
     width: 100%;
+    height: 350px;
     color: #fff;
     border-radius: 24px;
 }
@@ -144,6 +153,10 @@ li
 .infoCard p
 {
     color: #fff;
+    margin-top: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 1.25em;
 }
 
 .infoCard h3
@@ -174,6 +187,22 @@ nav
     z-index: 1;
 }
 
+.navLink
+{
+    text-decoration: none;
+    font-family: Lato-Heavy, sans-serif;
+    font-size: 1.25em;
+    letter-spacing: 2px;
+    padding: 10px 15px;
+}
+
+.navLink:hover
+{
+    color: #7b83c4;
+    border-top: #040c89 solid 3px;
+    border-bottom: #00000000 solid 3px;
+}
+
 .navLogo
 {
     height: 100px;
@@ -194,9 +223,13 @@ nav
 
 .brandTitleLine
 {
+    font-family: Lato-Heavy, sans-serif;
+    font-size: 1.25em;
+    letter-spacing: 3px;
     margin-left: 10px;
     margin-top: 0;
     margin-bottom: 0;
+
 }
 
 /* MAIN PAGE CONTENT */
@@ -262,6 +295,13 @@ footer a
 .footLink
 {
     margin-left: 25px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.25em;
+}
+
+.footLink:hover
+{
+    color: #e5e7f3;
 }
 
 #footCors
@@ -280,10 +320,126 @@ footer a
 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 25px 15%;
+    margin: 25px 15% 0px 15%;
 }
 
 #legalInfo p
 {
     font-size: 1em;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1823px)
+{
+    .infoCard
+    {
+        height: 275px;
+    }
+
+    .infoCard h3
+    {
+        font-size: 4em;
+    }
+
+    .infoCard h4
+    {
+        font-size: 1.5em;
+    }
+
+    .infoCard p
+    {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 1145px)
+{
+    .bgHeader
+    {
+        margin-top: 60px;
+    }
+
+    .infoCard
+    {
+        height: 250px;
+    }
+
+    .infoCard h3
+    {
+        font-size: 3.25em;
+    }
+
+    .infoCard h4
+    {
+        font-size: 1.25em;
+    }
+}
+
+@media screen and (max-width: 1083px)
+{
+    .bgHeader h2
+    {
+        font-size: 3em;
+    }
+
+    .infoCard
+    {   
+        height: 215px;
+    }
+
+    .infoCard p
+    {
+        font-size: 0.75em;
+    }
+}
+
+@media screen and (max-width: 897px)
+{
+    .navLink
+    {
+        font-size: 0.75em;
+    }
+
+    .brandTitleLine
+    {
+        font-size: 0.75em;
+    }
+
+    main p, h1, h2
+    {
+        margin: 25px 5%;
+    }
+
+    .bgHeader
+    {
+        margin-top: 40px;
+        width: 95%;
+    }
+
+    .cardGrid
+    {
+        width: 95%;
+    }
+
+    .infoCard
+    {
+        height: 170px;
+        padding-top: 10px;
+        margin-top: 0;
+    }
+
+    .infoCard h3
+    {
+        font-size: 3em;
+    }
+
+    .infoCard h4
+    {
+        font-size: 1.25em;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+
 }
