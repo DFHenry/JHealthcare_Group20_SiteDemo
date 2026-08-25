@@ -82,6 +82,21 @@ li
 
 /* LAYOUTS */
 
+#hamburger
+{
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+}
+
+#hamburger img
+{
+    width: 64px;
+    height: 64px;
+}
+
 .bgImage
 {
     display: flex;
@@ -122,7 +137,6 @@ li
     justify-content: space-between;
     align-items: center;
     width: 70%;
-
 }
 
 .infoCard
@@ -329,7 +343,15 @@ footer a
 }
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 1823px)
+@media screen and (max-width:1306px)
+{
+    #footCors p
+    {
+        font-size: 1.25em;
+    }
+}
+
+@media screen and (max-width: 1283px)
 {
     .infoCard
     {
@@ -375,7 +397,7 @@ footer a
     }
 }
 
-@media screen and (max-width: 1083px)
+@media screen and (max-width: 1089px)
 {
     .bgHeader h2
     {
@@ -390,6 +412,16 @@ footer a
     .infoCard p
     {
         font-size: 0.75em;
+    }
+
+    #footCors p
+    {
+        font-size: 1em;
+    }
+
+    .footLink
+    {
+        font-size: 1em;
     }
 }
 
@@ -413,8 +445,11 @@ footer a
     .bgHeader
     {
         margin-top: 40px;
+        margin-bottom: 5px;
         width: 95%;
     }
+
+    
 
     .cardGrid
     {
@@ -423,23 +458,141 @@ footer a
 
     .infoCard
     {
-        height: 170px;
+        height: 145px;
         padding-top: 10px;
+        margin: 5px;
         margin-top: 0;
     }
 
     .infoCard h3
     {
         font-size: 3em;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
     .infoCard h4
     {
-        font-size: 1.25em;
+        font-size: 1em;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .infoCard p
+    {
+        font-size: 0.7em;
+    }
+
+    .footGrid
+    {
+        margin: 25px 5%;
+    }
+
+    #legalInfo
+    {
+        margin: 25px 5% 0px 5%;
     }
 }
 
 @media screen and (max-width: 768px)
 {
+    .bgHeader
+    {
+        margin-top: -30px;
+    }
 
+    .bgHeader h2
+    {
+        font-size: 2em;
+    }
+
+    .bgHeader p
+    {
+        font-size: 1em;
+    }
+
+    .infoCard
+    {
+        height: 170px;
+    }
+}
+
+@media screen and (max-width: 618px)
+{
+    .navLink
+    {
+        display: none;
+    }
+
+    .bgImage
+    {
+        background-color: #040c89;
+    }
+
+    .bgImage img
+    {
+        display: none;
+    }
+
+    .bgContent
+    {
+        position: relative;
+    }
+
+    .bgHeader
+    {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .bgHeader h2
+    {
+        align-self: center;
+        margin-bottom: 0;
+    }
+
+    .bgHeader p
+    {
+        text-align: center;
+    }
+
+    .cardGrid
+    {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .infoCard:first-child
+    {
+        margin-left: 20px;
+    }
+
+    .infoCard:last-child
+    {
+        margin-right: 20px;
+    }
+
+    .infoCard h3
+    {
+        display: none;
+        align-self: center;
+        font-size: 3em;
+    }
+
+    .infoCard h4
+    {
+        align-self: center;
+        font-size: 3em;
+    }
+
+    .infoCard p
+    {
+        font-size: 1.25em;
+    }
+
+    #hamburger
+    {
+        display: block;
+    }
 }
