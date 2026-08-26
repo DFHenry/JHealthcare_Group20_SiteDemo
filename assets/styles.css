@@ -565,12 +565,12 @@ footer a
 
     .infoCard:first-child
     {
-        margin-left: 20px;
+        margin-left: 5px;
     }
 
     .infoCard:last-child
     {
-        margin-right: 20px;
+        margin-right: 5px;
     }
 
     .infoCard h3
@@ -594,5 +594,113 @@ footer a
     #hamburger
     {
         display: block;
+    }
+
+    .footGrid
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footSocials
+    {
+        justify-self: center;
+        flex-direction: row;
+    }
+
+    #socialLinks
+    {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+
+    #footLogo
+    {
+        
+    }
+
+    #footMap
+    {
+        display: none;
+    }
+
+    #footCors
+    {
+        justify-self: center;
+    }
+
+    #footCors p
+    {
+        font-size: 1.5em;
+    }
+
+    #legalInfo
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #address
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 509px)
+{
+    h1
+    {
+        font-size: 1.75em;
+    }
+
+    p
+    {
+        font-size: 1em;
+    }
+
+    #hamburger img
+    {
+        width:48px;
+        height: 48px;
+    }
+
+    .infoCard h4
+    {
+        font-size: 2em;
+    }
+
+    .infoCard p
+    {
+        font-size: 1em;
+    }
+
+    #footLogo
+    {
+        width: 75px;
+        height: 75px;
+    }
+
+    .socialIcon
+    {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    #footCors p
+    {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .infoCard
+    {
+        width: 95%;
     }
 }
