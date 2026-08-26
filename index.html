@@ -23,11 +23,14 @@
         
     </nav>
 
-    <div id="hamburger">
+    <div id="hamburger" onclick="Menu()">
         <img src="./assets/img/hamburger.png" alt="">
     </div>
     <div id="burgerMenu">
-        
+        <a class="burgerLink" href="#">OVERVIEW</a>
+        <a class="burgerLink" href="#">IMPACT</a>
+        <a class="burgerLink" href="#">ABOUT US</a>
+        <a class="burgerLink" href="#">GET INVOLVED</a>
     </div>
 
     <main>
@@ -116,4 +119,26 @@
         </div>
     </footer>
 </body>
+
+<script>
+    let hamburger = document.getElementById("hamburger");
+    let burgerMenu = document.getElementById("burgerMenu");
+
+    let menuOn = false;
+
+    function Menu()
+    {
+        console.log("hit");
+        if(menuOn == false)
+        {
+            burgerMenu.style.display = "flex";
+            menuOn = true;
+        }
+        else
+        {
+            burgerMenu.style.display = "none";
+            menuOn = false;
+        }
+    }
+</script>
 </html>

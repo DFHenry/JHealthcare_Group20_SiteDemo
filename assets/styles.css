@@ -97,6 +97,34 @@ li
     height: 64px;
 }
 
+#burgerMenu
+{
+    position: fixed;
+    top: 20px;
+    right: 84px;
+    z-index: 2;
+    display: none;
+    flex-direction: column;
+    width: 240px;
+    background-color: #040c89;
+}
+
+.burgerLink
+{
+    color: #fff;
+    padding: 10px;
+    align-self: center;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-family: Lato-Heavy, sans-serif;
+    font-size: 1.25em;
+}
+
+.burgerLink:hover
+{
+    color:var(--midBlue);
+}
+
 .bgImage
 {
     display: flex;
@@ -449,8 +477,6 @@ footer a
         width: 95%;
     }
 
-    
-
     .cardGrid
     {
         width: 95%;
@@ -614,11 +640,6 @@ footer a
         margin-left: 10px;
     }
 
-    #footLogo
-    {
-        
-    }
-
     #footMap
     {
         display: none;
@@ -665,8 +686,13 @@ footer a
 
     #hamburger img
     {
-        width:48px;
+        width: 48px;
         height: 48px;
+    }
+
+    #burgerMenu
+    {
+        right: 68px;
     }
 
     .infoCard h4
