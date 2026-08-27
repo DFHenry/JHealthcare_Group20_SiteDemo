@@ -31,6 +31,11 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.latoHeavy
+{
+    font-family: Lato-Heavy, sans-serif;
+}
+
 /* BASIC RULES */
 
 body
@@ -75,9 +80,16 @@ a
     font-size: 1.5em;
 }
 
+ul
+{
+    padding-left: 0;
+
+}
+
 li
 {
     list-style-type: none;
+    padding-bottom: 5px;
 }
 
 /* LAYOUTS */
@@ -281,6 +293,31 @@ main p, h1, h2
     margin: 25px 15%;
 }
 
+.actionCall
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.actionCall a
+{
+    background-color: var(--mainBlue);
+    color: #fff;
+    padding: 20px;
+    border-radius: 48px;
+    margin: 10px;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+.actionCall a:hover
+{
+    background-color: #e5e7f3;
+    color: #040c89;
+}
+
 /* FOOTER STYLING */
 
 footer
@@ -400,6 +437,11 @@ footer a
     {
         font-size: 1em;
     }
+
+    .footLink
+    {
+        font-size: 1em;
+    }
 }
 
 @media screen and (max-width: 1145px)
@@ -449,7 +491,7 @@ footer a
 
     .footLink
     {
-        font-size: 1em;
+        font-size: 0.85em;
     }
 }
 
@@ -512,6 +554,11 @@ footer a
     .footGrid
     {
         margin: 25px 5%;
+    }
+
+    .footLink
+    {
+        font-size: 0.735em;
     }
 
     #legalInfo
@@ -728,5 +775,10 @@ footer a
     .infoCard
     {
         width: 95%;
+    }
+
+    .actionCall a
+    {
+        font-size: 1em;
     }
 }
